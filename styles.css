@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Courier New', Courier, monospace ;
+}
+/* navigation bar */
+nav{
+    padding: 15px;
+    box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+nav .logo{
+    display: inline-block;
+    width: 30%;
+}
+
+nav .logo img{
+    width:220px;
+    height: 80px;
+}
+ nav .navigation{
+    width: 68%;
+    display: inline-block;
+    text-align: right;
+    float:right;
+ }
+ nav .navigation ul{
+    margin-top: 30px ;
+ }
+
+ nav .navigation ul li{
+    display: inline-block;
+    padding: 0px 10px;
+    
+ }
+
+ nav .navigation ul li a{
+    text-decoration: none;
+    color: rgb(14, 162, 162);
+    text-transform: uppercase;
+    font-weight: 700;
+ }
+nav .navigation ul li a:hover,
+nav .navigation ul li a:active,
+nav .navigation ul li a:focus{
+    text-decoration: underline;
+}
+ /* End of navigation bar */
+
+ /* header */
+header{
+    background-image: url('./image/log\ in.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    /* background-clip: text;
+    -webkit-background-clip: text; */
+    color: transparent;
+    padding: 120px 0px;
+    color: white;
+    text-align: center;
+}
+header .content{
+    max-width: 992px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+header .content h1{
+    font-size: 30px ;
+}
+header .content P{
+    font-size: 18PX;
+
+}
+header .content button{
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    text-transform: uppercase;
+    outline: none ;
+    background-color: blue;
+    color: white;
+    margin: 20px;
+    cursor: pointer;
+}
+/* End of header */
+/* main-content */
+section{
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 60px 0px;
+}
+article{
+    width: 65%;
+    padding: 15px;
+    display: inline-block;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+ 
+}
+article h3{
+    font-size:32px;
+}
+article p{
+    margin-bottom: 20px;
+}
+article p small{
+    color: red;
+}
+article img{
+    max-width: 100%;
+    margin-bottom: 20px;
+
+}
+/* End of main Content */
+
+/* aside */
+aside{
+    width: 25%;
+    padding: 15px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    float: right;
+}
+aside .post{
+    border-bottom: 1px solid #888888;
+    margin-bottom: 30px;
+}
+aside .post h4{
+    font-size: 20px;
+}
+aside .post p{
+    font-size: 16px;
+    margin: 12px 0;
+}
+aside .post a{
+    text-decoration: none;
+    color: #d48c79;
+    cursor: pointer;
+}
+aside .post a:hover,
+aside .post a:focus,
+aside .post a:active{
+    text-decoration: underline;
+}
+/* end of aside */
+/* footer */
+footer{
+    padding: 20px;
+    background-color: #111111;
+}
+footer p{
+    color: white;
+}
+
+/* media Query */
+/* Tablet */
+
+@media screen and (max-width: 768px) {
+    /* navigation bar */
+    nav .logo{
+       width: 100%; 
+       text-align: center;
+    }
+    nav .navigation{
+        width: 100%;
+        float: none;
+        text-align: center;
+        font-size: 14px;
+    }
+    nav .navigation ul{
+        margin-top: 10px ;
+    }
+
+    /* end of navigation */
+
+    /* header */
+
+    header{
+        padding: 40px 0px;
+    }
+
+    header .content h1{
+        font-size: 28px;
+    }
+    /* main-content */
+    section{
+       padding: 30px 0px; 
+    }
+    article{
+        width: 90%;
+        display: block;
+        margin: 0px auto 20px;
+    }
+    /* aside */
+    aside{
+        display: block;
+        float: none;
+        width: 90%;
+        margin: 0px auto;
+    }
+}
